@@ -41,7 +41,7 @@ CREATE TABLE IF NOT EXISTS sales(
     Gross_income DECIMAL(12,4) NOT NULL,
     Rating NUMERIC(3,1)
 );
-
+```
 
 ### 2. Data Exploration & Cleaning
 - **Record Count**: Determine the total number of records in the dataset.
@@ -126,7 +126,6 @@ GROUP BY product_line
 ORDER BY frequency DESC;
 
 --How many unique customer types does the data have?
-
 SELECT 
 	COUNT(DISTINCT customer_type)
 FROM sales;
@@ -136,7 +135,7 @@ FROM sales;
 SELECT 
 	COUNT(DISTINCT payment_method)
 FROM sales;
-
+```
 ### 3. Data Analysis & Findings
 
 The following SQL queries were developed to answer specific business questions:
@@ -148,7 +147,7 @@ FROM sales
 WHERE date = '2019-03-04';
 ```
 
-**Write the sql query to calculate the total sales for each product_line*
+**Write the sql query to calculate the total sales for each product_line**
 ```sql
 SELECT 
     product_line,
