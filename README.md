@@ -211,7 +211,7 @@ SELECT
 	month_name AS month,
 	ROUND(SUM(total),2) AS total_revenue
 FROM sales
-GROUP BY month
+GROUP BY month_name
 ORDER BY total_revenue DESC;
 ```
 
