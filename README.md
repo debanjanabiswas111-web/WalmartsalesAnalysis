@@ -29,17 +29,17 @@ CREATE TABLE IF NOT EXISTS sales(
     Customer_type VARCHAR(30) NOT NULL,
     Gender VARCHAR(10) NOT NULL,
     Product_line VARCHAR(100) NOT NULL,
-    Unit_price DECIMAL(10,2) NOT NULL,
+    Unit_price FLOAT(10,2) NOT NULL,
     Quantity INT NOT NULL,
-    VAT NUMERIC(6,4) NOT NULL,
-    Total DECIMAL(12,4) NOT NULL,
-    Date TIMESTAMP NOT NULL,
+    VAT INT(6,4) NOT NULL,
+    Total FLOAT(12,4) NOT NULL,
+    Date DATE NOT NULL,
     Time TIME NOT NULL,
     payment_method VARCHAR(15) NOT NULL,
-    cogs DECIMAL(10,2) NOT NULL,
-    Gross_margin_pct NUMERIC(11,9),
-    Gross_income DECIMAL(12,4) NOT NULL,
-    Rating NUMERIC(3,1)
+    cogs FLOAT(10,2) NOT NULL,
+    Gross_margin_pct INT(11,9),
+    Gross_income FLOAT(12,4) NOT NULL,
+    Rating INT(3,1)
 );
 ```
 
